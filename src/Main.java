@@ -5,12 +5,13 @@ public class Main {
         int total = 0;
         int sum = 2_459_000;
         int money = 15000;
-        int month = 0;
+        int month = 1;
         while (total <= sum) {
             total = total + money;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
             month += 1;
         }
-        System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+
         System.out.println();
 
         ////Task 2
