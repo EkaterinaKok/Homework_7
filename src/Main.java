@@ -97,13 +97,13 @@ public class Main {
         int currentYear = 2025;
         int startYear = currentYear - 200;
         int endYear = currentYear + 100;
-        int firstYear = 0;
-        while (firstYear <= startYear) {
-            firstYear += 79;
+        while (startYear <= endYear) {
+            startYear +=1;
+            if (startYear % 79 == 0) {
+                System.out.println(startYear);
+            }
         }
-        for (int y = firstYear; y <= endYear; y += 79) {
-            System.out.println(y);
-        }
+
 
 
     }
